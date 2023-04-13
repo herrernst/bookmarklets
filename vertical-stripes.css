@@ -1,0 +1,19 @@
+:root {
+  position: relative;
+}
+:root::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 1px,
+    rgba(127, 127, 127, 0.5) 1px,
+    rgba(127, 127, 127, 0.5) 2px
+  );
+  z-index: 1337;
+  pointer-events: none;
+}
