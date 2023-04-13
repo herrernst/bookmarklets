@@ -1,0 +1,14 @@
+:root {
+  position: relative;
+}
+:root::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background: #ff000066;
+  background: repeating-conic-gradient(rgba(127, 127, 127, 0.5) 0% 25%, transparent 0% 50%) 50% / 4px 4px;
+  z-index: 1337;
+  pointer-events: none;
+}
